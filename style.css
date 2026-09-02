@@ -609,6 +609,10 @@ main > .card
 {
     text-align: center;
 }
+.text-align-left
+{
+    text-align: left;
+}
 .faq-header
 {
     justify-content: space-between;
