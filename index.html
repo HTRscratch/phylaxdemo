@@ -20,13 +20,17 @@
             <img src="imgs/logo.png" class="logo-small mobile-only">
             <img src="imgs/logo.png" class="logo pc-only">
             <nav class="adapt-row-list nav-links">
-                <a href="#">Método</a>
+                <a href="#sobre">Sobre</a>
                 <div class="separator mobile-only"></div>
-                <a href="#">Soluções</a>
+                <a href="#metodo">Método</a>
                 <div class="separator mobile-only"></div>
-                <a href="#">Índice Phylax</a>
+                <a href="#solucoes">Soluções</a>
                 <div class="separator mobile-only"></div>
-                <a href="#">Sobre</a>
+                <a href="#indice">Índice Phylax</a>
+                <div class="separator mobile-only"></div>
+                <a href="#setores">Setores</a>
+                <div class="separator mobile-only"></div>
+                <a href="#faq">FAQ</a>
             </nav>
             <button class="button-simple pc-only">
                 FALE COM UM ESPECIALISTA
@@ -36,7 +40,7 @@
             </button>
         </header>
         <main>
-            <section class="hero">
+            <section class="hero" id="inicio">
                 <div class="hero-content">
                     <article class="hero-article column-list">
                         <h1 class="title">
@@ -58,7 +62,7 @@
                             <button class="button-simple" style="width: 250px">
                                 SOLICITAR DIAGNÓSTICO
                             </button>
-                            <button class="button-simple" style="width: 250px">
+                            <button class="button-simple" style="width: 250px" onclick="document.getElementById('metodo').scrollIntoView()">
                                 CONHECER NOSSO MÉTODO
                             </button>
                         </div>
@@ -75,7 +79,7 @@
             <section class="section-generic no-padding">
                 <div class="adapt-row-list card align-self-stretch no-margin">
                     <div class="column-list align-items-center text-align-center container-small">
-                        <img class="icon-medium" src="imgs/icon_placeholder.png">
+                        <img class="icon-medium" src="imgs/icon_person_2.png">
                         <h4 class="title"> FOCO NO CONSUMIDOR </h4>
                         <p class="small-text gray"> Colocamos o consumidor no centro das decisões das empresas. </p>
                     </div>
@@ -83,7 +87,7 @@
                     <div class="separator"></div>
 
                     <div class="column-list align-items-center text-align-center container-small">
-                        <img class="icon-medium"src="imgs/icon_placeholder.png">
+                        <img class="icon-medium" src="imgs/icon_badge.png">
                         <h4 class="title"> PROCESSOS QUE FUNCIONAM </h4>
                         <p class="small-text gray"> Organizamos, estruturados e otimizamos processos de ponta a ponta. </p>
                     </div>
@@ -91,7 +95,7 @@
                     <div class="separator"></div>
 
                     <div class="column-list align-items-center text-align-center container-small">
-                        <img class="icon-medium" src="imgs/icon_placeholder.png">
+                        <img class="icon-medium" src="imgs/thumbs-up.png">
                         <h4 class="title"> REPUTAÇÃO E CONFIANÇA </h4>
                         <p class="small-text gray"> Construímos reputação, geramos confiança e aumentamos a recompra. </p>
                     </div>
@@ -99,19 +103,19 @@
                     <div class="separator"></div>
 
                     <div class="column-list align-items-center text-align-center container-small">
-                        <img class="icon-medium" src="imgs/icon_placeholder.png">
+                        <img class="icon-medium" src="imgs/icon_graph.png">
                         <h4 class="title"> RESULTADOS REAIS </h4>
                         <p class="small-text gray"> Reduzimos reclamações e transformamos experiências em resultados mensuráveis. </p>
                     </div>
                 </div>
             </section>
-            <section class="adapt-row-list section-generic bg-1">
+            <section class="adapt-row-list section-generic bg-1" id="sobre">
 				<div class="section-overlay"></div>
                 <h1 class="title align-center-mobile">
                     A Phylax&nbspPro nasceu para olhar <br><span class="marked light">além
                     da reclamação.</span>
                 </h1>
-                <article class="column-list align-center-mobile">
+                <article class="column-list align-center-mobile container-big">
                     <p>
                         A <span class="marked">Phylax Pro</span> nasceu de uma percepção simples: <br><span class="marked">os problemas que chegam até o
                        consumidor quase nunca começam nele.</span>
@@ -163,22 +167,22 @@
                     </p>
                 </article>
             </section>
-            <section class="section-generic bg-3">
+            <section class="section-generic bg-3" id="metodo">
                 <div class="section-overlay"></div>
                 <div class="column-list align-items-stretch">
                     <h1 class="title text-align-center align-self-stretch">
                         Método Phylax&nbspPro® <br>
                         <span class="marked light">Diagnosticar. Estruturar. Fortalecer.
                     </h1>
-                    <div class="column-list align-center-mobile">
+                    <div class="column-list align-center-mobile" style="gap: 40px; padding-top: 40px">
 
-                        <div class="column-list">
+                        <div class="column-list" style="gap: 20px">
 
                             <div class="row-list align-items-center">
-                                <h1 class="big-text marked light step-number text-align-center"> 1 </h1>
+                                <h1 class="big-text marked step-number text-align-center"> 1 </h1>
                                 <div class="column-list no-gap text-align-left">
-                                    <h2 class="big-text light"> Diagnóstico estratégico </h2>
-                                    <p class="small-text light">
+                                    <h2 class="big-text"> Diagnóstico estratégico </h2>
+                                    <p class="small-text">
                                         Entendemos onde a reputação começa a ser construída, e onde ela está sendo comprometida.
                                     </p>
                                 </div>
@@ -186,7 +190,7 @@
 
                             <div class="adapt-row-list card card-hero no-gap">
                                 <div class="column-list container-medium align-items-stretch text-align-center no-gap">
-                                    <h3 class="title marked light text-align-center">
+                                    <h3 class="title marked text-align-center">
                                         O QUE FAZEMOS
                                     </h3>
                                     <p class="small-text">
@@ -196,7 +200,7 @@
                                 </div>
                                 <div class="separator"></div>
                                 <div class="column-list no-gap">
-                                    <h3 class="title marked light text-align-center">
+                                    <h3 class="title marked text-align-center">
                                         O QUE ANALIZAMOS
                                     </h3>
                                     <ul class="small-text no-padding">
@@ -213,7 +217,7 @@
                                 </div>
                                 <div class="separator"></div>
                                 <div class="column-list container-medium align-items-center">
-                                    <h3 class="title marked light text-align-center">
+                                    <h3 class="title marked text-align-center">
                                         O QUE ENTREGAMOS
                                     </h3>
                                     <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
@@ -226,13 +230,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column-list">
+                        <div class="column-list" style="gap: 20px">
 
                             <div class="row-list align-items-center">
-                                <h1 class="big-text marked light step-number text-align-center"> 2 </h1>
+                                <h1 class="big-text marked step-number text-align-center"> 2 </h1>
                                 <div class="column-list no-gap text-align-left">
-                                    <h2 class="big-text light"> Estruturação e implantação </h2>
-                                    <p class="small-text light">
+                                    <h2 class="big-text"> Estruturação e implantação </h2>
+                                    <p class="small-text">
                                         O diagnóstico se transforma em processo. E o processo, em padrão.
                                     </p>
                                 </div>
@@ -240,7 +244,7 @@
 
                             <div class="adapt-row-list card card-hero">
                                 <div class="column-list container-medium align-items-stretch text-align-center no-gap">
-                                    <h3 class="title marked light">
+                                    <h3 class="title marked">
                                         O QUE FAZEMOS
                                     </h3>
                                     <p class="small-text">
@@ -251,7 +255,7 @@
                                 </div>
                                 <div class="separator"></div>
                                 <div class="column-list no-gap">
-                                    <h3 class="title marked light">
+                                    <h3 class="title marked">
                                         O QUE MAPEAMOS
                                     </h3>
                                     <ul class="small-text no-padding">
@@ -267,7 +271,7 @@
                                 </div>
                                 <div class="separator"></div>
                                 <div class="column-list container-medium align-items-center">
-                                    <h3 class="title marked light">
+                                    <h3 class="title marked">
                                         O QUE ENTREGAMOS
                                     </h3>
                                     <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
@@ -280,13 +284,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column-list">
+                        <div class="column-list" style="gap: 20px">
 
                             <div class="row-list align-items-center">
-                                <h1 class="big-text marked light step-number text-align-center"> 3 </h1>
+                                <h1 class="big-text marked step-number text-align-center"> 3 </h1>
                                 <div class="column-list no-gap text-align-left">
-                                    <h2 class="big-text light"> Gestão e evolução contínua </h2>
-                                    <p class="small-text light">
+                                    <h2 class="big-text"> Gestão e evolução contínua </h2>
+                                    <p class="small-text">
                                         Reputação não é um projeto pontual. É um ativo que precisa ser acompanhado.
                                     </p>
                                 </div>
@@ -294,7 +298,7 @@
 
                             <div class="adapt-row-list card card-hero no-gap">
                                 <div class="column-list container-medium align-items-stretch text-align-center no-gap">
-                                    <h3 class="title marked light text-align-center">
+                                    <h3 class="title marked text-align-center">
                                         O QUE FAZEMOS
                                     </h3>
                                     <p class="small-text">
@@ -305,7 +309,7 @@
                                 </div>
                                 <div class="separator"></div>
                                 <div class="column-list no-gap">
-                                    <h3 class="title marked light text-align-center">
+                                    <h3 class="title marked text-align-center">
                                         O QUE ACOMPANHAMOS
                                     </h3>
                                     <ul class="small-text no-padding">
@@ -321,7 +325,7 @@
                                 </div>
                                 <div class="separator"></div>
                                 <div class="column-list container-medium align-items-center">
-                                    <h3 class="title marked light text-align-center">
+                                    <h3 class="title marked text-align-center">
                                         O QUE ENTREGAMOS
                                     </h3>
                                     <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
@@ -337,7 +341,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="solucoes" class="section-generic">
                 <h2 class="title text-align-center">
                     Cada momento traz novos desafios.<br>
                     <span class="marked light">Sua reputação precisa estar preparada para todos eles.</span>
@@ -508,15 +512,15 @@
                     </div>
                 </div>
             </section>
-            <section class="section-generic bg-5">
+            <section class="section-generic bg-5" id="indice">
                 <div class="section-overlay"></div>
-                <div class="adapt-row-list">
-                    <div class="column-list align-center-mobile">
+                <div class="adapt-row-list" style="gap: 30px;">
+                    <div class="column-list align-center-mobile container-big">
                         <h2 class="title">
                             Reputação não é <br>apenas percepção. <br>
                             <span class="marked light">É um ativo que pode <br> ser acompanhado.</span>
                         </h2>
-                        <div style="max-width: 600px; margin-bottom: 10px;">
+                        <div class="small-text">
                             <p>
                                 O Índice Phylax™ traduz a experiência do consumidor em uma leitura 
                                 objetiva da maturidade reputacional da empresa.
@@ -544,102 +548,124 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column-list card card-hero no-gap container-big">
-                        <h6 class="small-text marked no-margin light">Índice de Reputação Phylax™</h6>
-                        <p class="smaller-text gray">Phylax Reputation Index — PRI</p>
+                    <div class="column-list card card-hero no-gap container-medium">
+                        <h6 class="smaller-text gray no-margin light">Índice de Reputação Phylax™</h6>
 
                         <div class="row-list align-self-stretch align-items-center text-align-center" style="justify-content: space-between;">
-                            <div class="column-list no-gap align-items-stretch" style="margin-left: 20px;">
+                            <div class="column-list no-gap align-items-stretch">
                                 <p class="no-margin small-text marked">Inicial</p>
                                 <p class="no-margin small-text marked"> 47 </p>
                             </div>
 
-                            <div class="row-list align-self-center" style="margin-inline: 10px;">
-                                <img class="icon-medium" src="imgs/thumbs-up.png">
-                                <h1 class="score-small text-align-center align-self-center"><span class="score-big light">78</span>/100</h1>
+                            <div class="column-list no-gap">
+                                <div class="row-list align-self-center" style="margin-inline: 10px;">
+                                    <img class="icon-medium" src="imgs/thumbs-up.png">
+                                    <h1 class="score-small text-align-center align-self-center no-margin"><span class="score-big light">78</span>/100</h1>
+                                </div>
                             </div>
-                            <div class="column-list no-gap align-items-stretch" style="margin-right: 20px;">
+                            <div class="column-list no-gap align-items-stretch">
                                 <p class="no-margin small-text marked"> Meta</h6>
                                 <p class="no-margin small-text marked"> 91 </p>
                             </div>
                         </div>
-
-                        <div class="column-list align-self-stretch align-items-center no-gap">
-                            <div class="row-list metric-row-title">
-                                <p class="small-text">Atendimento</p>
-                                <p class="title">82%</p>
+                        
+                        <div class="column-list align-self-stretch">
+                            <div class="row-list align-self-stretch align-items-center">
+                                <div class="icon-circle">
+                                    <img src="imgs/icon_person.png" class="icon-small">
+                                </div>
+                                <div class="column-list align-self-stretch align-items-center no-gap" style="flex: 1">
+                                    <div class="row-list metric-row-title">
+                                        <p class="small-text">Atendimento</p>
+                                        <p class="title">82%</p>
+                                    </div>
+                                    <i class="metric-row">
+                                        <b style="width: 82%"></b>
+                                    </i>
+                                </div>
                             </div>
-                            <i class="metric-row">
-                                <b style="width: 82%"></b>
-                            </i>
-                        </div>
 
-                        <div class="separator"></div>
-
-                        <div class="column-list align-self-stretch align-items-center no-gap">
-                            <div class="row-list metric-row-title">
-                                <p class="small-text">Resolução</p>
-                                <p class="title">76%</p>
+                            <div class="row-list align-self-stretch align-items-center">
+                                <div class="icon-circle">
+                                    <img src="imgs/icon_resolution.png" class="icon-small">
+                                </div>
+                                <div class="column-list align-self-stretch align-items-center no-gap" style="flex: 1">
+                                    <div class="row-list metric-row-title">
+                                        <p class="small-text">Resolução</p>
+                                        <p class="title">76%</p>
+                                    </div>
+                                    <i class="metric-row">
+                                        <b style="width: 76%"></b>
+                                    </i>
+                                </div>
                             </div>
-                            <i class="metric-row">
-                                <b style="width: 76%"></b>
-                            </i>
-                        </div>
 
-                        <div class="separator"></div>
-
-                        <div class="column-list align-self-stretch align-items-center no-gap">
-                            <div class="row-list metric-row-title">
-                                <p class="small-text">Pós-venda</p>
-                                <p class="title">71%</p>
+                            <div class="row-list align-self-stretch align-items-center">
+                                <div class="icon-circle">
+                                    <img src="imgs/icon_buy.png" class="icon-small">
+                                </div>
+                                <div class="column-list align-self-stretch align-items-center no-gap" style="flex: 1">
+                                    <div class="row-list metric-row-title">
+                                        <p class="small-text">Pós-venda</p>
+                                        <p class="title">71%</p>
+                                    </div>
+                                    <i class="metric-row">
+                                        <b style="width: 71%"></b>
+                                    </i>
+                                </div>
                             </div>
-                            <i class="metric-row">
-                                <b style="width: 71%"></b>
-                            </i>
-                        </div>
 
-                        <div class="separator"></div>
-
-                        <div class="column-list align-self-stretch align-items-center no-gap">
-                            <div class="row-list metric-row-title">
-                                <p class="small-text">Recorrência</p>
-                                <p class="title">68%</p>
+                            <div class="row-list align-self-stretch align-items-center">
+                                <div class="icon-circle">
+                                    <img src="imgs/icon_again.png" class="icon-small">
+                                </div>
+                                <div class="column-list align-self-stretch align-items-center no-gap" style="flex: 1">
+                                    <div class="row-list metric-row-title">
+                                        <p class="small-text">Recorrência</p>
+                                        <p class="title">68%</p>
+                                    </div>
+                                    <i class="metric-row">
+                                        <b style="width: 68%"></b>
+                                    </i>
+                                </div>
                             </div>
-                            <i class="metric-row">
-                                <b style="width: 68%"></b>
-                            </i>
-                        </div>
 
-                        <div class="separator"></div>
-
-                        <div class="column-list align-self-stretch align-items-center no-gap">
-                            <div class="row-list metric-row-title">
-                                <p class="small-text">Reputação</p>
-                                <p class="title">84%</p>
+                            <div class="row-list align-self-stretch align-items-center">
+                                <div class="icon-circle">
+                                    <img src="imgs/icon_protect.png" class="icon-small">
+                                </div>
+                                <div class="column-list align-self-stretch align-items-center no-gap" style="flex: 1">
+                                    <div class="row-list metric-row-title">
+                                        <p class="small-text">Reputação</p>
+                                        <p class="title">84%</p>
+                                    </div>
+                                    <i class="metric-row">
+                                        <b style="width: 84%"></b>
+                                    </i>
+                                </div>
                             </div>
-                            <i class="metric-row">
-                                <b style="width: 84%"></b>
-                            </i>
-                        </div>
 
-                        <div class="separator"></div>
-
-                        <div class="column-list align-self-stretch align-items-center no-gap">
-                            <div class="row-list metric-row-title">
-                                <p class="small-text">Satisfação</p>
-                                <p class="title">79%</p>
+                            <div class="row-list align-self-stretch align-items-center">
+                                <div class="icon-circle">
+                                    <img src="imgs/icon_happy.png" class="icon-small">
+                                </div>
+                                <div class="column-list align-self-stretch align-items-center no-gap" style="flex: 1">
+                                    <div class="row-list metric-row-title">
+                                        <p class="small-text">Satisfação</p>
+                                        <p class="title">79%</p>
+                                    </div>
+                                    <i class="metric-row">
+                                        <b style="width: 79%"></b>
+                                    </i>
+                                </div>
                             </div>
-                            <i class="metric-row">
-                                <b style="width: 79%"></b>
-                            </i>
-                        </div>
 
                     </div>
                 </div>
 
             </section>
 
-            <section class="section-generic">
+            <section class="section-generic" id="setores">
                 <div class="column-list text-align-center align-items-center">
                     <h2 class="title">
                         Reclamações deixam de ser ruído. <br>
@@ -742,7 +768,7 @@
                 </div>
 
             </section>
-            <section class="section-generic bg-faq section-faq">
+            <section class="section-generic bg-faq section-faq" id="faq">
                 <div class="section-overlay"></div>
                 <div class="adapt-row-list">
                     <div class="column-list">
