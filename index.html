@@ -15,39 +15,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="style.css">
+    </head>
     <body>
         <header class="top-bar">
             <img src="imgs/logo.png" class="logo-small mobile-only">
             <img src="imgs/logo.png" class="logo pc-only">
             <nav class="adapt-row-list nav-links">
+                <a href="#inicio">Início</a>
+                <div class="separator separator-blue mobile-only"></div>
                 <a href="#sobre">Sobre</a>
-                <div class="separator mobile-only"></div>
+                <div class="separator separator-blue mobile-only"></div>
                 <a href="#metodo">Método</a>
-                <div class="separator mobile-only"></div>
+                <div class="separator separator-blue mobile-only"></div>
                 <a href="#solucoes">Soluções</a>
-                <div class="separator mobile-only"></div>
+                <div class="separator separator-blue mobile-only"></div>
                 <a href="#indice">Índice Phylax</a>
-                <div class="separator mobile-only"></div>
+                <div class="separator separator-blue mobile-only"></div>
                 <a href="#setores">Setores</a>
-                <div class="separator mobile-only"></div>
+                <div class="separator separator-blue mobile-only"></div>
                 <a href="#faq">FAQ</a>
             </nav>
-            <button class="button-simple pc-only">
-                FALE COM UM ESPECIALISTA
+            <button class="button-simple pc-only whatsapp">
+                <div class="row-list color-message align-items-center">
+                    <img class="icon-small" src="imgs/icon_whatsapp.png">
+                    <p class="no-margin">
+                        FALE COM UM ESPECIALISTA
+                    </p>
+                </div>
             </button>
-            <button class="mobile-only img-button" onclick="toggleMenu()">
+            <button id= "nav toggle" class="mobile-only img-button" onclick="toggleMenu()">
                 <img src="imgs/icon_menu.png">
             </button>
         </header>
         <main>
             <section class="hero" id="inicio">
+                <img class="hero-watermark" src="imgs/logo_watermark.png">
                 <div class="hero-content">
                     <article class="hero-article column-list">
                         <h1 class="title">
                             Transformamos&nbsp<br>
-                            <span class="marked light">experiências.</span> <br>
+                            <span class="marked">experiências.</span> <br>
                             Construímos&nbspconfiança.<br>
-                            <span class="marked light">Geramos&nbspresultados.</span>
+                            <span class="marked">Geramos&nbspresultados.</span>
                         </h1>
                         <p>
                         A Phylax Pro identifica as causas que comprometem a experiência do consumidor
@@ -56,13 +65,18 @@
                         </p>
                         <div class="adapt-row-list">
                             <div class="card card-hero container-medium mobile-only">
-                                <h3 class="title marked light"> NOSSO PROPÓSITO </h3>
+                                <h3 class="title marked "> NOSSO PROPÓSITO </h3>
                                 <p class="small-text"> Fazer da sua empresa uma referência em atendimento, pós-venda e relacionamento com o consumidor.</p>
                             </div>
-                            <button class="button-simple" style="width: 250px">
-                                SOLICITAR DIAGNÓSTICO
+                            <button class="button-simple whatsapp">
+                                <div class="row-list color-message align-items-center">
+                                    <img class="icon-small" src="imgs/icon_whatsapp.png">
+                                    <p class="no-margin">
+                                        SOLICITAR DIAGNÓSTICO
+                                    </p>
+                                </div>
                             </button>
-                            <button class="button-simple" style="width: 250px" onclick="document.getElementById('metodo').scrollIntoView()">
+                            <button class="button-simple" style="width: 250px"  onclick="document.getElementById('metodo').scrollIntoView()">
                                 CONHECER NOSSO MÉTODO
                             </button>
                         </div>
@@ -70,14 +84,13 @@
                     <div class="card card-hero pc-only" style="align-self: flex-end;
                     height: fit-content; width: 200px;
                     ">
-                        <h3 class="title marked light"> NOSSO PROPÓSITO </h3>
+                        <h3 class="title marked"> NOSSO PROPÓSITO </h3>
                         <p class="small-text"> Fazer da sua empresa uma referência em atendimento, pós-venda e relacionamento com o consumidor.</p>
                     </div>
                 </div>
-                <div class="hero-overlay"></div>
             </section>
-            <section class="section-generic no-padding">
-                <div class="adapt-row-list card align-self-stretch no-margin">
+            <section class="section-generic bg-0 black-bg">
+                <div class="adapt-row-list align-self-stretch">
                     <div class="column-list align-items-center text-align-center container-small">
                         <img class="icon-medium" src="imgs/icon_person_2.png">
                         <h4 class="title"> FOCO NO CONSUMIDOR </h4>
@@ -109,55 +122,68 @@
                     </div>
                 </div>
             </section>
-            <section class="adapt-row-list section-generic bg-1" id="sobre">
-				<div class="section-overlay"></div>
-                <h1 class="title align-center-mobile">
-                    A Phylax&nbspPro nasceu para olhar <br><span class="marked light">além
+            <section class="column-list text-align-center align-items-center section-generic bg-1" id="sobre">
+                <h1 class="title">
+                    A Phylax&nbspPro nasceu para olhar <br><span class="marked ">além
                     da reclamação.</span>
                 </h1>
-                <article class="column-list align-center-mobile container-big">
-                    <p>
-                        A <span class="marked">Phylax Pro</span> nasceu de uma percepção simples: <br><span class="marked">os problemas que chegam até o
-                       consumidor quase nunca começam nele.</span>
-                    </p>
-                    <div class="separator"></div>
-                    <p>
-                        Por trás de reclamações recorrentes, experiências negativas e desgastes de
-                        reputação, existem processos, decisões, falhas de comunicação e pontos de ruptura
-                        que, muitas vezes, permanecem invisíveis para a própria empresa.
-                    </p>
-                    <div class="separator"></div>
-                    <p>
-                        Foi a partir dessa compreensão que nasceu a Phylax: para ajudar empresas a
-                        enxergarem o que existe por trás dos seus conflitos com consumidores e transformar
-                        essa compreensão em evolução.
-                    </p>
-                    <div class="separator"></div>
-                    <p>
-                        Acreditamos que proteger uma reputação não significa apenas responder bem
-                        quando um problema acontece. Significa compreender suas causas, identificar
-                        padrões, estruturar processos mais eficientes e criar uma operação capaz de oferecer
-                        experiências melhores de forma consistente.
-                    </p>
-                    <div class="separator"></div>
-                    <p>
-                        <span class="marked">Por isso, nossa atuação começa na origem.</span>
-                    </p>
-                    <div class="separator"></div>
-                    <p>
-                        Analisamos a realidade de cada empresa, sua relação com os consumidores e os
-                        sinais que surgem ao longo dessa jornada. A partir deles, construímos estratégias
-                        para corrigir fragilidades, prevenir recorrências e fortalecer aquilo que sustenta toda
-                        relação de longo prazo: a confiança.
-                    </p>
+                <div class="separator separator-blue"></div>
+                <article class="carousel container-big" tabindex="0">
+                    <div class="row-list carousel-items">
+                        <div class="column-list align-items-stretch card container-medium">
+                            <p class="small-text no-margin gray">A Phylax Pro nasceu de uma percepção simples:</p>
+                            <h3 class="title marked no-margin">
+                                Os problemas que chegam até o
+                                consumidor quase nunca começam nele.</span>
+                            </h3>
+                            <p>
+                                Por trás de reclamações recorrentes, experiências negativas e desgastes de
+                                reputação, existem processos, decisões, falhas de comunicação e pontos de ruptura
+                                que, muitas vezes, permanecem invisíveis para a própria empresa.
+                            </p>
+                        </div>
+                        <div class="column-list align-items-stretch card container-medium">
+                            <p class="small-text no-margin gray">Foi a partir dessa compreensão que nasceu a Phylax:</p>
+                            <h3 class="title marked no-margin">
+                                para ajudar empresas a
+                                enxergarem o que existe por trás dos seus conflitos com consumidores e transformar
+                                essa compreensão em evolução.
+                            </h3>
+                            <p>
+                                Acreditamos que proteger uma reputação não significa apenas responder bem
+                                quando um problema acontece. Significa compreender suas causas, identificar
+                                padrões, estruturar processos mais eficientes e criar uma operação capaz de oferecer
+                                experiências melhores de forma consistente.
+                            </p>
+                            
+                            
+                        </div>
+                        <div class="column-list align-items-stretch card container-medium">
+                            <p class="small-text no-margin gray">
+                                Por isso,
+                            </p>
+                            <h3 class="title marked no-margin">
+                                nossa atuação começa na origem.
+                            </h3>
+                            <p>
+                                Analisamos a realidade de cada empresa, sua relação com os consumidores e os
+                                sinais que surgem ao longo dessa jornada. A partir deles, construímos estratégias
+                                para corrigir fragilidades, prevenir recorrências e fortalecer aquilo que sustenta toda
+                                relação de longo prazo: a confiança.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button prev pc-only"> < </button>
+                    <button class="button next pc-only"> > </button>
                 </article>
+                <div class="separator separator-blue"></div>
             </section>
-            <section class="section-generic">
-                <div class="section-overlay"></div>
+            
+            <section class="section-generic bg-4 black-bg">
                 <article class="column-list align-items-center text-align-center">
                     <h2 class="title">
                         Reputação não se perde de uma vez. <br>
-                        <span class="marked light">Ela se desgasta em cada experiência mal conduzida.</span>
+                        <span class="marked">Ela se desgasta em cada experiência mal conduzida.</span>
                     </h2>
                     <p>
                         Analisamos a realidade de cada empresa, sua relação com os consumidores e os
@@ -168,190 +194,143 @@
                 </article>
             </section>
             <section class="section-generic bg-3" id="metodo">
-                <div class="section-overlay"></div>
-                <div class="column-list align-items-stretch">
+                <div class="column-list align-items-center">
+                    
                     <h1 class="title text-align-center align-self-stretch">
-                        Método Phylax&nbspPro® <br>
-                        <span class="marked light">Diagnosticar. Estruturar. Fortalecer.
+                        Conheça o <br> <span class="marked">método Phylax&nbspPro</span>
                     </h1>
-                    <div class="column-list align-center-mobile" style="gap: 40px; padding-top: 40px">
-
-                        <div class="column-list" style="gap: 20px">
-
-                            <div class="row-list align-items-center">
-                                <h1 class="big-text marked step-number text-align-center"> 1 </h1>
-                                <div class="column-list no-gap text-align-left">
-                                    <h2 class="big-text"> Diagnóstico estratégico </h2>
-                                    <p class="small-text">
+                    <div class="separator separator-blue"></div>
+                    <div class="carousel container-big" tabindex="1">
+                        <div class="carousel-items row-list">
+                            <div class="column-list container-medium card card-black-blue">
+                                <div class="column-list">
+                                    <div class="row-list align-items-stretch">
+                                        <img class="icon-medium" src="imgs/icon_diagnosticar.png">
+                                        <h2 class="title"> Diagnosticar </h2>
+                                    </div>
+                                    <p class="smaller-text gray no-margin">
                                         Entendemos onde a reputação começa a ser construída, e onde ela está sendo comprometida.
                                     </p>
                                 </div>
-                            </div>
-
-                            <div class="adapt-row-list card card-hero no-gap">
-                                <div class="column-list container-medium align-items-stretch text-align-center no-gap">
-                                    <h3 class="title marked text-align-center">
-                                        O QUE FAZEMOS
-                                    </h3>
-                                    <p class="small-text">
-                                        Mapeamos a jornada do consumidor e analisamos os pontos de contato da empresa para identificar falhas, 
-                                        recorrências e riscos que impactam a experiência e a percepção da marca. 
-                                    </p>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list no-gap">
-                                    <h3 class="title marked text-align-center">
-                                        O QUE ANALIZAMOS
-                                    </h3>
-                                    <ul class="small-text no-padding">
-                                        <li>jornada do consumidor</li>
-                                        <li>atendimento</li>
-                                        <li>pós-venda</li>
-                                        <li>reclamações recorrentes</li>
-                                        <li>Reclame Aqui</li>
-                                        <li>Procons</li>
-                                        <li>processos judiciais</li>
-                                        <li>fluxos internos</li>
-                                        <li>indicadores</li>
-                                    </ul>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list container-medium align-items-center">
-                                    <h3 class="title marked text-align-center">
-                                        O QUE ENTREGAMOS
-                                    </h3>
-                                    <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
-                                        <p>Mapa de riscos</p>
-                                        <p>+</p>
-                                        <p>Diagnóstico dos pontos críticos</p>
-                                        <p>+</p>
-                                        <p>Plano estratégico de ação.</p>
+                                <div class="column-list container-medium no-gap">
+                                        <p class="small-text">
+                                            Mapeamos a jornada do consumidor e analisamos os pontos de contato da empresa para identificar falhas, 
+                                            recorrências e riscos que impactam a experiência e a percepção da marca. 
+                                        </p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column-list" style="gap: 20px">
-
-                            <div class="row-list align-items-center">
-                                <h1 class="big-text marked step-number text-align-center"> 2 </h1>
-                                <div class="column-list no-gap text-align-left">
-                                    <h2 class="big-text"> Estruturação e implantação </h2>
-                                    <p class="small-text">
-                                        O diagnóstico se transforma em processo. E o processo, em padrão.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="adapt-row-list card card-hero">
-                                <div class="column-list container-medium align-items-stretch text-align-center no-gap">
-                                    <h3 class="title marked">
-                                        O QUE FAZEMOS
-                                    </h3>
-                                    <p class="small-text">
-                                        Atuamos sobre as causas identificadas, estruturando fluxos, 
-                                        responsabilidades e procedimentos para reduzir falhas, melhorar a experiência
-                                         do consumidor e prevenir a recorrência de conflitos.
-                                    </p>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list no-gap">
-                                    <h3 class="title marked">
-                                        O QUE MAPEAMOS
-                                    </h3>
-                                    <ul class="small-text no-padding">
-                                        <li>fluxos de atendimento</li>
-                                        <li>procedimentos internos</li>
-                                        <li>POPs</li>
-                                        <li>tratativas de reclamações</li>
-                                        <li>gestão de conflitos</li>
-                                        <li>responsabilidades</li>
-                                        <li>treinamentos</li>
-                                        <li>indicadores</li>
-                                    </ul>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list container-medium align-items-center">
-                                    <h3 class="title marked">
-                                        O QUE ENTREGAMOS
-                                    </h3>
-                                    <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
-                                        <p>Processos estruturados</p>
-                                        <p>+</p>
-                                        <p>Protocolos de atuação</p>
-                                        <p>+</p>
-                                        <p>Equipes preparadas</p>
+                                    <div class="separator separator-blue"></div>
+                                    <div class="column-list no-gap">
+                                        <h4 class="title marked text-align-center">
+                                            O QUE ANALIZAMOS:
+                                        </h4>
+                                        <p class="small-text">Jornada do consumidor • Atendimento • Pós-venda • Reclamações recorrentes • Reclame Aqui • Procons • Processos judiciais • Fluxos internos • Indicadores</p>
                                     </div>
-                                </div>
+                                    <div class="separator separator-blue"></div>
+                                    <div class="column-list container-medium">
+                                        <h4 class="title marked">
+                                            O QUE ENTREGAMOS:
+                                        </h4>
+                                        <p class="small-text">Mapa de riscos + diagnóstico dos pontos críticos + plano estratégico de ação.</p>
+                                    </div>
                             </div>
-                        </div>
-                        <div class="column-list" style="gap: 20px">
-
-                            <div class="row-list align-items-center">
-                                <h1 class="big-text marked step-number text-align-center"> 3 </h1>
-                                <div class="column-list no-gap text-align-left">
-                                    <h2 class="big-text"> Gestão e evolução contínua </h2>
-                                    <p class="small-text">
+                            <div class="column-list container-medium card card-black-blue">
+                                <div class="column-list">
+                                    <div class="row-list align-items-stretch">
+                                        <img class="icon-medium" src="imgs/icon_estruturar.png">
+                                        <h2 class="title"> Estruturar </h2>
+                                    </div>
+                                    <p class="smaller-text gray no-margin">
+                                        O diagnóstico se transforma em processo e o processo, em padrão.
+                                    </p>
+                                </div>
+                                <div class="column-list container-medium no-gap">
+                                        <p class="small-text">
+                                            Atuamos sobre as causas identificadas, 
+                                            estruturando fluxos, responsabilidades 
+                                            e procedimentos para reduzir falhas, 
+                                            melhorar a experiência do consumidor e 
+                                            prevenir a recorrência de conflitos.
+                                        </p>
+                                    </div>
+                                    <div class="separator separator-blue"></div>
+                                    <div class="column-list no-gap">
+                                        <h4 class="title marked text-align-center">
+                                            O QUE MAPEAMOS:
+                                        </h4>
+                                        <p class="small-text">Fluxos de atendimento
+                                            • Procedimentos internos
+                                            • POPs
+                                            • Tratativas de reclamações
+                                            • Gestão de conflitos
+                                            • Responsabilidades
+                                            • Treinamentos
+                                            • Indicadores
+                                        </p>
+                                    </div>
+                                    <div class="separator separator-blue"></div>
+                                    <div class="column-list container-medium">
+                                        <h4 class="title marked">
+                                            O QUE ENTREGAMOS:
+                                        </h4>
+                                        <p class="small-text">Processos estruturados + Protocolos de atuação + Equipes preparadas.</p>
+                                    </div>
+                            </div>
+                            <div class="column-list container-medium card card-black-blue">
+                                <div class="column-list">
+                                    <div class="row-list align-items-stretch">
+                                        <img class="icon-medium" src="imgs/icon_evolucao.png">
+                                        <h2 class="title"> Fortalecer </h2>
+                                    </div>
+                                    <p class="smaller-text gray no-margin">
                                         Reputação não é um projeto pontual. É um ativo que precisa ser acompanhado.
                                     </p>
                                 </div>
-                            </div>
-
-                            <div class="adapt-row-list card card-hero no-gap">
-                                <div class="column-list container-medium align-items-stretch text-align-center no-gap">
-                                    <h3 class="title marked text-align-center">
-                                        O QUE FAZEMOS
-                                    </h3>
-                                    <p class="small-text">
-                                        Monitoramos os indicadores da operação e a evolução dos 
-                                        pontos críticos para identificar novas tendências, antecipar riscos 
-                                        e garantir que as melhorias implantadas continuem gerando resultado.
-                                    </p>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list no-gap">
-                                    <h3 class="title marked text-align-center">
-                                        O QUE ACOMPANHAMOS
-                                    </h3>
-                                    <ul class="small-text no-padding">
-                                        <li>indicadores</li>
-                                        <li>reclamações</li>
-                                        <li>recorrências</li>
-                                        <li>Reclame Aqui</li>
-                                        <li>Procons</li>
-                                        <li>processos</li>
-                                        <li>performance do atendimento</li>
-                                        <li>percepção do consumidor</li>
-                                    </ul>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list container-medium align-items-center">
-                                    <h3 class="title marked text-align-center">
-                                        O QUE ENTREGAMOS
-                                    </h3>
-                                    <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
-                                        <p>Monitoramento</p>
-                                        <p>+</p>
-                                        <p>Análise de evolução</p>
-                                        <p>+</p>
-                                        <p>Recomendações estratégicas contínuas</p>
+                                <div class="column-list container-medium no-gap">
+                                        <p class="small-text">
+                                            Monitoramos os indicadores da operação e a evolução 
+                                            dos pontos críticos para identificar novas tendências, 
+                                            antecipar riscos e garantir que as melhorias implantadas 
+                                            continuem gerando resultado.
+                                        </p>
                                     </div>
-                                </div>
+                                    <div class="separator separator-blue"></div>
+                                    <div class="column-list no-gap">
+                                        <h4 class="title marked text-align-center">
+                                            O QUE ACOMPANHAMOS:
+                                        </h4>
+                                        <p class="small-text">
+                                            Indicadores • Reclamações • 
+                                            Recorrências • Reclame Aqui • 
+                                            Procons • Processos • Performance do atendimento 
+                                            • Percepção do consumidor
+                                        </p>
+                                    </div>
+                                    <div class="separator separator-blue"></div>
+                                    <div class="column-list container-medium">
+                                        <h4 class="title marked">
+                                            O QUE ENTREGAMOS:
+                                        </h4>
+                                        <p class="small-text">Monitoramento + análise de evolução + recomendações estratégicas contínuas.</p>
+                                    </div>
                             </div>
                         </div>
+                        <button class="button prev pc-only"> < </button>
+                        <button class="button next pc-only"> > </button>
                     </div>
                 </div>
             </section>
-            <section id="solucoes" class="section-generic">
+            <section id="solucoes" class="section-generic column-list align-items-center black-bg">
                 <h2 class="title text-align-center">
                     Cada momento traz novos desafios.<br>
-                    <span class="marked light">Sua reputação precisa estar preparada para todos eles.</span>
+                    <span class="marked ">Sua reputação precisa estar preparada para todos eles.</span>
                 </h2>
-                <div class="column-list">
-                    <div class="adapt-row-list card">
-                        <div class="column-list align-items-stretch">
+                <div class="separator separator"></div>
+                <div class="carousel container-big" tabindex="3">
+                    <div class="row-list carousel-items">
+                        <div class="column-list card container-medium align-items-stretch">
                             <div class="column-list text-align-center align-items-stretch">
-                                <h6 class="small-text marked no-margin light">SOLUÇÃO 01 — DIAGNÓSTICO</h6>
-                                <h2 class="title no-margin">Diagnóstico Estratégico da Experiência do Consumidor</h3>
+                                <h6 class="small-text marked no-margin ">SOLUÇÃO 1: DIAGNÓSTICO</h6>
+                                <h3 class="title no-margin">Diagnóstico Estratégico da Experiência do Consumidor</h3>
                                 <p class="gray small-text">
                                     Uma análise aprofundada da jornada do consumidor para identificar as 
                                     causas das reclamações, os pontos de ruptura da 
@@ -359,197 +338,239 @@
                                     reputação da empresa.
                                 </p>
                             </div>
-                            <div class="adapt-row-list card card-hero align-self-center">
-                                <div class="column-list">
-                                    <h3 class="title marked light text-align-center">O QUE FAZEMOS</h3>
-                                    <ul class="no-padding small-text">
-                                        <li>mapeamento da jornada do consumidor e dos principais pontos de contato</li>
-                                        <li>análise das reclamações e identificação de padrões e recorrências</li>
-                                        <li>avaliação dos fluxos de atendimento e pós-venda</li>
-                                        <li>identificação de gargalos, falhas operacionais e pontos de risco</li>
-                                        <li>análise de dados provenientes de Reclame Aqui, Procons e demais canais disponíveis</li>
-                                        <li>identificação das principais causas geradoras de insatisfação</li>
-                                        <li>definição de prioridades e oportunidades de melhoria</li>
-                                    </ul>
+                            <div class="column-list">
+                                <div class="faq card card">
+                                    <button class="faq-header color-message">
+                                        <span class="title big-text">O que fazemos?</span>
+                                        <b class="expand">^</b>
+                                    </button>
+                                    <div class="faq-content">
+                                        <div class="faq-inner">
+                                            <ul class="no-padding small-text">
+                                            <li>mapeamento da jornada do consumidor e dos principais pontos de contato</li>
+                                            <li>análise das reclamações e identificação de padrões e recorrências</li>
+                                            <li>avaliação dos fluxos de atendimento e pós-venda</li>
+                                            <li>identificação de gargalos, falhas operacionais e pontos de risco</li>
+                                            <li>análise de dados provenientes de Reclame Aqui, Procons e demais canais disponíveis</li>
+                                            <li>identificação das principais causas geradoras de insatisfação</li>
+                                            <li>definição de prioridades e oportunidades de melhoria</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="separator"></div>
-                                <div class="column-list align-items-stretch">
-                                    <h3 class="title marked light text-align-center">O QUE A EMPRESA RECEBE</h3>
-                                    <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
-                                        <p>Diagnóstico estratégico</p>
-                                        <p>+</p>
-                                        <p>Mapa dos pontos críticos</p>
-                                        <p>+</p>
-                                        <p >Identificação das causas</p>
-                                        <p>+</p>
-                                        <p>Plano de ação priorizado</p>
+                                <div class="faq card">
+                                    <button class="faq-header color-message">
+                                        <span class="title big-text">O que a empresa recebe?</span>
+                                        <b classs="expand">^</b>
+                                    </button>
+                                    <div class="faq-content">
+                                        <div class="faq-inner">
+                                            <ul class="no-padding small-text">
+                                                <li>Diagnóstico estratégico</li>
+                                                <li>Mapa dos pontos críticos</li>
+                                                <li>Identificação das causas</li>
+                                                <li>Plano de ação priorizado</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="adapt-row-list align-items-stretch">
-                                <p><span class="marked light">Ideal para: </span>empresas que sabem que existem problemas 
-                                    na experiência do consumidor,
-                                    mas precisam entender onde estão as causas e por onde começar.
-                                </p>
-                                <div class="separator"></div>
-                                <button class="button-simple">
-                                    FALE COM UM ESPECIALISTA
-                                </button>
-                            </div>   
+                            <p><span class="marked ">Ideal para: </span>empresas que sabem que existem problemas 
+                                na experiência do consumidor,
+                                mas precisam entender onde estão as causas e por onde começar.
+                            </p>
+                            <div class="separator separator-blue"></div>
+                            <button class="button-simple whatsapp">
+                                <div class="row-list color-message align-items-center">
+                                    <img class="icon-small" src="imgs/icon_whatsapp.png">
+                                    <p class="no-margin">
+                                        FALE COM UM ESPECIALISTA
+                                    </p>
+                                </div>
+                            </button>
                         </div>
-                    </div>
-                    
-                    <div class="adapt-row-list card">
-                        <div class="column-list align-items-stretch">
+                        <div class="column-list card container-medium align-items-stretch">
                             <div class="column-list text-align-center align-items-stretch">
-                                <h6 class="small-text marked no-margin light">SOLUÇÃO 02 — ESTRUTURAÇÃO</h6>
-                                <h2 class="title no-margin">Estruturação de Atendimento e Pós-Venda</h3>
+                                <h6 class="small-text marked no-margin ">SOLUÇÃO 2: ESTRUTURAÇÃO</h6>
+                                <h3 class="title no-margin">Estruturação de Atendimento e Pós-Venda</h3>
                                 <p class="gray small-text">
                                     Transformamos os pontos identificados no diagnóstico em processos claros, padronizados 
                                     e aplicáveis à operação, criando uma estrutura de atendimento capaz de prevenir falhas, 
                                     reduzir recorrências e melhorar a experiência do consumidor.
                                 </p>
                             </div>
-                            <div class="adapt-row-list card card-hero align-self-center">
-                                <div class="column-list">
-                                    <h3 class="title marked light text-align-center">O QUE FAZEMOS</h3>
-                                    <ul class="no-padding small-text">
-                                        <li>desenho e revisão dos fluxos de atendimento e pós-venda</li>
-                                        <li>definição de responsabilidades e níveis de atuação</li>
-                                        <li>criação e padronização de procedimentos internos</li>
-                                        <li>desenvolvimento de POPs, protocolos e orientações de atendimento</li>
-                                        <li>estruturação de fluxos para reclamações e situações críticas</li>
-                                        <li>definição de critérios de escalonamento e tomada de decisão</li>
-                                        <li>criação de indicadores de acompanhamento</li>
-                                        <li>treinamento e orientação das equipes envolvidas</li>
-                                    </ul>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list align-items-stretch">
-                                    <h3 class="title marked light text-align-center">O QUE A EMPRESA RECEBE</h3>
-                                    <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
-                                        <p>Processos estruturados</p>
-                                        <p>+</p>
-                                        <p>Fluxos definidos</p>
-                                        <p>+</p>
-                                        <p >Protocolos de atuação</p>
-                                        <p>+</p>
-                                        <p>Indicadores</p>
-                                        <p>+</p>
-                                        <p>Equipe orientada para execução</p>
+                            <div class="column-list">
+                                <div class="faq card">
+                                    <button class="faq-header color-message">
+                                        <span class="title big-text">O que fazemos?</span>
+                                        <b class="expand">^</b>
+                                    </button>
+                                    <div class="faq-content">
+                                        <div class="faq-inner">
+                                            <ul class="no-padding small-text">
+                                                <li>desenho e revisão dos fluxos de atendimento e pós-venda</li>
+                                                <li>definição de responsabilidades e níveis de atuação</li>
+                                                <li>criação e padronização de procedimentos internos</li>
+                                                <li>desenvolvimento de POPs, protocolos e orientações de atendimento</li>
+                                                <li>estruturação de fluxos para reclamações e situações críticas</li>
+                                                <li>definição de critérios de escalonamento e tomada de decisão</li>
+                                                <li>criação de indicadores de acompanhamento</li>
+                                                <li>treinamento e orientação das equipes envolvidas</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="faq card">
+                                    <button class="faq-header color-message">
+                                        <span class="title big-text">O que a empresa recebe?</span>
+                                        <b class="expand">^</b>
+                                    </button>
+                                    <div class="faq-content">
+                                        <div class="faq-inner">
+                                            <ul class="small-text no-padding">
+                                                <li>Processos estruturados</li>
+                                                <li>Fluxos definidos</li>
+                                                <li >Protocolos de atuação</li>
+                                                <li>Indicadores</li>
+                                                <li>Equipe orientada para execução</li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                </div>
                             </div>
-                            <div class="adapt-row-list align-items-stretch">
-                                <p><span class="marked light">Ideal para: </span>
-                                    empresas que cresceram, possuem processos 
-                                    pouco padronizados ou enfrentam reclamações recorrentes decorrentes 
-                                    de falhas na operação.
-                                </p>
-                                <div class="separator"></div>
-                                <button class="button-simple">
-                                    FALE COM UM ESPECIALISTA
-                                </button>
-                            </div>          
+                            <p><span class="marked ">Ideal para: </span>empresas que cresceram,
+                                 possuem processos pouco padronizados ou enfrentam reclamações
+                                  recorrentes decorrentes de falhas na operação.
+                            </p>
+                            <div class="separator separator-blue"></div>
+                            <button class="button-simple whatsapp">
+                                <div class="row-list color-message align-items-center">
+                                    <img class="icon-small" src="imgs/icon_whatsapp.png">
+                                    <p class="no-margin">
+                                        FALE COM UM ESPECIALISTA
+                                    </p>
+                                </div>
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="adapt-row-list card">
-                        <div class="column-list align-items-stretch">
+                        <div class="column-list card container-medium align-items-stretch">
                             <div class="column-list text-align-center align-items-stretch">
-                                <h6 class="small-text marked no-margin light">SOLUÇÃO 03 — GESTÃO</h6>
-                                <h2 class="title no-margin">Gestão Estratégica da Reputação Empresarial</h3>
+                                <h6 class="small-text marked no-margin ">SOLUÇÃO 3: GESTÃO</h6>
+                                <h3 class="title no-margin">Gestão Estratégica da Reputação Empresarial</h3>
                                 <p class="gray small-text">
-                                    Assumimos a gestão especializada dos principais canais de relacionamento e 
-                                    defesa do consumidor, transformando reclamações e conflitos em informações 
-                                    estratégicas para proteger a reputação e orientar a evolução da operação.
+                                    Assumimos a gestão especializada dos principais canais de relacionamento 
+                                    e defesa do consumidor, transformando reclamações e conflitos 
+                                    em informações estratégicas para proteger a reputação e orientar 
+                                    a evolução da operação.
                                 </p>
                             </div>
-                            <div class="adapt-row-list card card-hero align-self-center">
-                                <div class="column-list">
-                                    <h3 class="title marked light text-align-center">O QUE FAZEMOS</h3>
-                                    <ul class="no-padding small-text">
-                                        <li>gestão estratégica do Reclame Aqui</li>
-                                        <li>gestão e acompanhamento de demandas perante Procons</li>
-                                        <li>gestão de processos administrativos de defesa do consumidor</li>
-                                        <li>elaboração e acompanhamento das manifestações e tratativas</li>
-                                        <li>monitoramento de prazos, ocorrências e reincidências</li>
-                                        <li>classificação das reclamações por causa e natureza</li>
-                                        <li>identificação de padrões e riscos recorrentes</li>
-                                        <li>acompanhamento de indicadores de reputação</li>
-                                        <li>relatórios gerenciais e recomendações de melhoria</li>
-                                        <li>apresentação periódica dos principais pontos de atenção à empresa</li>
-                                    </ul>
-                                </div>
-                                <div class="separator"></div>
-                                <div class="column-list align-items-stretch">
-                                    <h3 class="title marked light text-align-center">O QUE A EMPRESA RECEBE</h3>
-                                    <div class="column-list container-medium text-align-center align-items-center no-gap big-text">
-                                        <p>Gestão especializada</p>
-                                        <p>+</p>
-                                        <p>Monitoramento contínuo</p>
-                                        <p>+</p>
-                                        <p>Indicadores</p>
-                                        <p>+</p>
-                                        <p>Inteligência sobre reclamações</p>
-                                        <p>+</p>
-                                        <p>Recomendações estratégicas</p>
+                            <div class="column-list">
+                                <div class="faq card">
+                                    
+                                    <button class="faq-header color-message">
+                                        <span class="title big-text">O que fazemos?</span>
+                                        <b class="expand">^</b>
+                                    </button>
+                                    <div class="faq-content">
+                                        <div class="faq-inner">
+                                            <ul class="no-padding small-text">
+                                                <li>gestão estratégica do Reclame Aqui</li>
+                                                <li>gestão e acompanhamento de demandas perante Procons</li>
+                                                <li>gestão de processos administrativos de defesa do consumidor</li>
+                                                <li>elaboração e acompanhamento das manifestações e tratativas</li>
+                                                <li>monitoramento de prazos, ocorrências e reincidências</li>
+                                                <li>classificação das reclamações por causa e natureza</li>
+                                                <li>identificação de padrões e riscos recorrentes</li>
+                                                <li>acompanhamento de indicadores de reputação</li>
+                                                <li>relatórios gerenciais e recomendações de melhoria</li>
+                                                <li>apresentação periódica dos principais pontos de atenção à empresa</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="faq card">
+                                    <button class="faq-header color-message">
+                                        <span class="title big-text">O que a empresa recebe?</span>
+                                        <b class="expand">^</b>
+                                    </button>
+                                    <div class="faq-content">
+                                        <div class="faq-inner">
+                                            <ul class="small-text no-padding">
+                                                <li>Gestão especializada</li>
+                                                <li>Monitoramento contínuo</li>
+                                                <li>Indicadores</li>
+                                                <li>Inteligência sobre reclamações</li>
+                                                <li>Recomendações estratégicas</li>
+                                            </ul>
+                                        </div>
+                                   </div>
+                                </div>
                             </div>
-                            <div class="adapt-row-list align-items-stretch">
-                                <p><span class="marked light">Ideal para: </span>
-                                    empresas que precisam de uma estrutura 
-                                    especializada e contínua para administrar sua reputação 
-                                    perante consumidores, plataformas e órgãos de defesa do consumidor.
-                                </p>
-                                <div class="separator"></div>
-                                <button class="button-simple">
-                                    FALE COM UM ESPECIALISTA
-                                </button>
-                            </div>               
+                            <p><span class="marked ">Ideal para: </span>empresas que precisam de uma estrutura 
+                                        especializada e contínua para administrar sua reputação 
+                                        perante consumidores, plataformas e órgãos de defesa do consumidor.
+                            </p>
+                            <div class="separator separator-blue"></div>
+                            <button class="button-simple whatsapp">
+                                <div class="row-list color-message align-items-center">
+                                    <img class="icon-small" src="imgs/icon_whatsapp.png">
+                                    <p class="no-margin">
+                                        FALE COM UM ESPECIALISTA
+                                    </p>
+                                </div>
+                            </button>
                         </div>
                     </div>
+                    <button class="button prev pc-only"> < </button>
+                    <button class="button next pc-only"> > </button>
                 </div>
+                <div class="separator"></div>
             </section>
             <section class="section-generic bg-5" id="indice">
-                <div class="section-overlay"></div>
                 <div class="adapt-row-list" style="gap: 30px;">
-                    <div class="column-list align-center-mobile container-big">
-                        <h2 class="title">
-                            Reputação não é <br>apenas percepção. <br>
-                            <span class="marked light">É um ativo que pode <br> ser acompanhado.</span>
-                        </h2>
-                        <div class="small-text">
-                            <p>
-                                O Índice Phylax™ traduz a experiência do consumidor em uma leitura 
+                    <div class="column-list container-big">
+                        <div class="column-list align-self-stretch align-center-mobile">
+                            <h2 class="title">
+                                Reputação não é <br>apenas percepção. <br>
+                                <span class="marked">É um ativo que pode <br> ser acompanhado.</span>
+                            </h2>
+
+                            <p class="small-text">
+                                O <span class="marked">Índice Phylax™</span> traduz a experiência do consumidor em uma leitura 
                                 objetiva da maturidade reputacional da empresa.
                             </p>
-                            <p class="gray">
+                            <p class="small-text">
                                 A partir de indicadores estratégicos, identificamos pontos críticos, 
                                 estabelecemos uma linha de base e acompanhamos a evolução da operação 
                                 ao longo do tempo.
                             </p>
                         </div>
-                        <div class="column-list align-center-mobile no-gap">
-                            <div class="column-list align-items-stretch no-gap">
-                                <h3 class="title no-margin">01 — MENSURAR</h3>
-                                <p class="small-text">Estabelecemos a maturidade reputacional atual da empresa.</p>
+                        <div class="separator separator-blue"></div>
+                        <div class="column-list">
+                            <div class="row-list align-items-center card card-black justify-content-left">
+                                <img src="imgs/icon_mensurar.png" class="icon-medium">
+                                <div class="column-list align-items-stretch no-gap">
+                                    <h3 class="title no-margin">MENSURAR</h3>
+                                    <p class="small-text">Estabelecemos a maturidade reputacional atual da empresa.</p>
+                                </div>
                             </div>
-                            <div class="separator"></div>
-                            <div class="column-list align-items-stretch no-gap">
-                                <h3 class="title no-margin">02 — DIRECIONAR</h3>
-                                <p class="small-text">Identificamos os pontos críticos e definimos prioridades de evolução.</p>
+                            <div class="row-list align-items-center card card-black justify-content-left">
+                                <img src="imgs/icon_alvo.png" class="icon-medium">
+                                <div class="column-list align-items-stretch no-gap">
+                                    <h3 class="title no-margin">DIRECIONAR</h3>
+                                    <p class="small-text">Identificamos os pontos críticos e definimos prioridades de evolução.</p>
+                                </div>
                             </div>
-                            <div class="separator"></div>
-                            <div class="column-list align-items-stretch no-gap">
-                                <h3 class="title no-margin">03 — ACOMPANHAR</h3>
-                                <p class="small-text">Monitoramos os indicadores para mensurar o impacto das melhorias implementadas.</p>
+                            <div class="row-list align-items-center card card-black justify-content-left">
+                                <img src="imgs/icon_evolucao.png" class="icon-medium">
+                                <div class="column-list align-items-stretch no-gap">
+                                    <h3 class="title no-margin">ACOMPANHAR</h3>
+                                    <p class="small-text">Monitoramos os indicadores para mensurar o impacto das melhorias implementadas.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column-list card card-hero no-gap container-medium">
-                        <h6 class="smaller-text gray no-margin light">Índice de Reputação Phylax™</h6>
+                    <div class="column-list card card-hero no-gap container-medium align-self-stretch no-margin">
+                        <h6 class="smaller-text gray no-margin ">Índice de Reputação Phylax™</h6>
 
                         <div class="row-list align-self-stretch align-items-center text-align-center" style="justify-content: space-between;">
                             <div class="column-list no-gap align-items-stretch">
@@ -560,7 +581,7 @@
                             <div class="column-list no-gap">
                                 <div class="row-list align-self-center" style="margin-inline: 10px;">
                                     <img class="icon-medium" src="imgs/thumbs-up.png">
-                                    <h1 class="score-small text-align-center align-self-center no-margin"><span class="score-big light">78</span>/100</h1>
+                                    <h1 class="score-small text-align-center align-self-center no-margin"><span class="score-big ">78</span>/100</h1>
                                 </div>
                             </div>
                             <div class="column-list no-gap align-items-stretch">
@@ -665,11 +686,11 @@
 
             </section>
 
-            <section class="section-generic" id="setores">
+            <section class="section-generic align-items-center column-list" id="setores">
                 <div class="column-list text-align-center align-items-center">
                     <h2 class="title">
                         Reclamações deixam de ser ruído. <br>
-                        <span class="marked light">Tornam-se inteligência.</span>
+                        <span class="marked ">Tornam-se inteligência.</span>
                     </h2>
                     <p class="gray">
                         Não gerenciamos reclamações isoladamente. Identificamos o que elas, 
@@ -677,111 +698,116 @@
                         em confiança e valor para a marca.
                     </p>
                 </div>
-                <div class="adapt-row-list">
-                    <div class="card container-medium">
-                        <div class="row-list align-items-center" style="width: fit-content;">
-                            <h5 class="big-text marked light ball-name text-align-center"> RA </h5>
-                            <div class="column-list no-gap">
-                                <h6 class="title smaller-text marked no-margin">Reclame Aqui</h6>
-                                <h4 class="title no-margin">Gestão Estratégica do<br>Reclame Aqui</h4>
+                <div class="separator separator-blue"></div>
+                <div class="carousel container-big" tabindex="2">
+                    <div class="carousel-items row-list">
+                        <div class="card container-medium">
+                            <div class="row-list align-items-center" style="width: fit-content;">
+                                <h5 class="big-text marked  ball-name text-align-center"> RA </h5>
+                                <div class="column-list no-gap">
+                                    <h6 class="title smaller-text marked no-margin">Reclame Aqui</h6>
+                                    <h4 class="title no-margin">Gestão Estratégica do<br>Reclame Aqui</h4>
+                                </div>
                             </div>
+
+                            <p class="small-text gray align-center-mobile">
+                                Não apenas respondemos reclamações. Gerenciamos o canal como 
+                                uma fonte contínua de percepção sobre a experiência do consumidor 
+                                e a reputação da marca.
+                            </p>
+                            <div class="separator separator-blue"></div>
+                            <h5 class="title marked">Atuação</h5>
+                            <ul class="no-padding small-text">
+                                <li>respostas estratégicas </li>
+                                <li>acompanhamento das tratativas </li>
+                                <li>monitoramento de indicadores </li>
+                                <li>classificação de causas </li>
+                                <li>identificação de recorrências </li>
+                                <li>análise da percepção do consumidor </li>
+                            </ul>
+                            <div class="separator separator-blue"></div>
+                            <h5 class="title marked">Resultado</h5>
+                            <p class="small-text">Mais resolutividade, melhor experiência e inteligência sobre as causas das reclamações.</p>
                         </div>
 
-                        <p class="small-text gray align-center-mobile">
-                            Não apenas respondemos reclamações. Gerenciamos o canal como 
-                            uma fonte contínua de percepção sobre a experiência do consumidor 
-                            e a reputação da marca.
-                        </p>
-                        <div class="separator"></div>
-                        <h5 class="title marked">Atuação</h5>
-                        <ul class="no-padding small-text">
-                            <li>respostas estratégicas </li>
-                            <li>acompanhamento das tratativas </li>
-                            <li>monitoramento de indicadores </li>
-                            <li>classificação de causas </li>
-                            <li>identificação de recorrências </li>
-                            <li>análise da percepção do consumidor </li>
-                        </ul>
-                        <div class="separator"></div>
-                        <h5 class="title marked">Resultado</h5>
-                        <p class="small-text">Mais resolutividade, melhor experiência e inteligência sobre as causas das reclamações.</p>
-                    </div>
-
-                    <div class="card container-medium">
-                        <div class="row-list align-items-center" style="width: fit-content;">
-                            <h5 class="big-text marked light ball-name text-align-center"> PRO </h5>
-                            <div class="column-list no-gap">
-                                <h6 class="title smaller-text marked no-margin">Procons e processos administrativos</h6>
-                                <h4 class="title no-margin">Gestão Técnica de<br>Defesa do Consumidor</h4>
+                        <div class="card container-medium">
+                            <div class="row-list align-items-center" style="width: fit-content;">
+                                <h5 class="big-text marked  ball-name text-align-center"> PRO </h5>
+                                <div class="column-list no-gap">
+                                    <h6 class="title smaller-text marked no-margin">Procons e processos administrativos</h6>
+                                    <h4 class="title no-margin">Gestão Técnica de<br>Defesa do Consumidor</h4>
+                                </div>
                             </div>
+
+                            <p class="small-text gray align-center-mobile">
+                                Condução especializada das demandas administrativas, 
+                                com atuação técnica, controle de riscos e análise das 
+                                causas que levam os conflitos aos órgãos de defesa do 
+                                consumidor.
+                            </p>
+                            <div class="separator separator-blue"></div>
+                            <h5 class="title marked">Atuação</h5>
+                            <ul class="no-padding small-text">
+                                <li>manifestações e defesas</li>
+                                <li>controle de prazos</li>
+                                <li>audiências</li>
+                                <li>recursos administrativos</li>
+                                <li>acompanhamento processual </li>
+                                <li>análise de reincidências </li>
+                            </ul>
+                            <div class="separator separator-blue"></div>
+                            <h5 class="title marked">Resultado</h5>
+                            <p class="small-text">Mais controle, consistência na atuação e redução de riscos e recorrências.</p>
                         </div>
 
-                        <p class="small-text gray align-center-mobile">
-                            Condução especializada das demandas administrativas, 
-                            com atuação técnica, controle de riscos e análise das 
-                            causas que levam os conflitos aos órgãos de defesa do 
-                            consumidor.
-                        </p>
-                        <div class="separator"></div>
-                        <h5 class="title marked">Atuação</h5>
-                        <ul class="no-padding small-text">
-                            <li>manifestações e defesas</li>
-                            <li>controle de prazos</li>
-                            <li>audiências</li>
-                            <li>recursos administrativos</li>
-                            <li>acompanhamento processual </li>
-                            <li>análise de reincidências </li>
-                        </ul>
-                        <div class="separator"></div>
-                        <h5 class="title marked">Resultado</h5>
-                        <p class="small-text">Mais controle, consistência na atuação e redução de riscos e recorrências.</p>
-                    </div>
-
-                    <div class="card container-medium">
-                        <div class="row-list align-items-center" style="width: fit-content;">
-                            <h5 class="big-text marked light ball-name text-align-center"> 360º</h5>
-                            <div class="column-list no-gap">
-                                <h6 class="title smaller-text marked no-margin">Inteligência integrada</h6>
-                                <h4 class="title no-margin">Uma reclamação informa.<br>O conjunto revela padrões</h4>
+                        <div class="card container-medium">
+                            <div class="row-list align-items-center" style="width: fit-content;">
+                                <h5 class="big-text marked  ball-name text-align-center"> 360º</h5>
+                                <div class="column-list no-gap">
+                                    <h6 class="title smaller-text marked no-margin">Inteligência integrada</h6>
+                                    <h4 class="title no-margin">Uma reclamação informa.<br>O conjunto revela padrões</h4>
+                                </div>
                             </div>
-                        </div>
 
-                        <p class="small-text gray align-center-mobile">
-                            Consolidamos os dados dos diferentes canais para 
-                            identificar causas recorrentes, tendências e pontos 
-                            críticos da jornada do consumidor.
-                        </p>
-                        <div class="separator"></div>
-                        <h5 class="title marked">Integramos</h5>
-                        <ul class="no-padding small-text">
-                            <li>Reclame Aqui</li>
-                            <li>Procons</li>
-                            <li>audiências</li>
-                            <li>processos administrativos</li>
-                            <li>indicadores internos</li>
-                            <li>histórico de reclamações</li>
-                        </ul>
-                        <div class="separator"></div>
-                        <h5 class="title marked">Transformamos em</h5>
-                        <p class="small-text">Indicadores, padrões, prioridades e recomendações para a tomada de decisão.</p>
+                            <p class="small-text gray align-center-mobile">
+                                Consolidamos os dados dos diferentes canais para 
+                                identificar causas recorrentes, tendências e pontos 
+                                críticos da jornada do consumidor.
+                            </p>
+                            <div class="separator separator-blue"></div>
+                            <h5 class="title marked">Integramos</h5>
+                            <ul class="no-padding small-text">
+                                <li>Reclame Aqui</li>
+                                <li>Procons</li>
+                                <li>audiências</li>
+                                <li>processos administrativos</li>
+                                <li>indicadores internos</li>
+                                <li>histórico de reclamações</li>
+                            </ul>
+                            <div class="separator separator-blue"></div>
+                            <h5 class="title marked">Transformamos em</h5>
+                            <p class="small-text">Indicadores, padrões, prioridades e recomendações para a tomada de decisão.</p>
+                        </div>
                     </div>
+                    <button class="button prev pc-only"> < </button>
+                    <button class="button next pc-only"> > </button>
                 </div>
-
+                <div class="separator separator-blue"></div>
             </section>
-            <section class="section-generic bg-faq section-faq" id="faq">
+            <section class="section-generic bg-faq section-faq column-list align-items-stretch" id="faq">
                 <div class="section-overlay"></div>
-                <div class="adapt-row-list">
-                    <div class="column-list">
-                        <h6 class="title marked small-text"> Perguntas frequentes </h6>
-                        <h1 class="title"> Antes de avançar </h1>
-                    </div>
-                    <div class="container-big">
-                        <div class="column-list">
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">A Phylax Pro atende empresas de qualquer porte?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                <div class="column-list align-items-center text-align-center no-gap">
+                    <h6 class="title marked small-text no-margin"> Perguntas frequentes </h6>
+                    <h1 class="title no-margin"> Antes de avançar </h1>
+                </div>
+                <div class="column-list container-big align-items-stretch align-self-center">
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">A Phylax Pro atende empresas de qualquer porte?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     Sim. As soluções são estruturadas de acordo com a realidade, 
                                     o nível de maturidade e os desafios de cada operação. 
@@ -790,12 +816,16 @@
                                     e inteligência reputacional.
                                 </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">É possível contratar apenas uma solução específica?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">É possível contratar apenas uma solução específica?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     Sim. As soluções podem ser contratadas 
                                     individualmente ou de forma integrada. 
@@ -803,12 +833,16 @@
                                     e dos objetivos da empresa.
                                 </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">Preciso contratar o Diagnóstico Estratégico antes das demais soluções?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">Preciso contratar o Diagnóstico Estratégico antes das demais soluções?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     Não necessariamente. Quando a empresa já possui 
                                     um problema claramente identificado, podemos atuar 
@@ -817,12 +851,16 @@
                                     recomendado como ponto de partida.
                                 </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">A Phylax Pro assume a gestão do Reclame Aqui e dos Procons?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">A Phylax Pro assume a gestão do Reclame Aqui e dos Procons?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     Sim. A Gestão Estratégica da Reputação 
                                     pode contemplar Reclame Aqui, Procons e 
@@ -832,12 +870,16 @@
                                     gerar inteligência para a empresa.
                                 </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">A Phylax Pro substitui o departamento jurídico da empresa?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">A Phylax Pro substitui o departamento jurídico da empresa?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     Não. Nossa atuação é complementar e especializada 
                                     na experiência do consumidor e na gestão reputacional. 
@@ -845,12 +887,16 @@
                                     departamentos jurídico, atendimento, comercial e demais áreas envolvidas.
                                 </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">Como funciona o início do trabalho?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">Como funciona o início do trabalho?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     Tudo começa com uma conversa de entendimento sobre a 
                                     operação, os desafios atuais e os objetivos da empresa. 
@@ -858,12 +904,16 @@
                                     adequada e definimos o escopo de atuação.
                                 </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">Como os resultados são acompanhados?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">Como os resultados são acompanhados?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     Por meio de indicadores definidos conforme 
                                     o projeto e a realidade da operação. Nas soluções 
@@ -872,39 +922,46 @@
                                     reputacionais ao longo do trabalho.
                                 </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="column-list faq card">
-                                <button class="row-list faq-header align-items-center color-message">
-                                    <span class="title big-text">Em quanto tempo é possível perceber resultados?</span>
-                                    <b class="expand">+</b>
-                                </button>
+                    <div class="faq card">
+                        <button class="faq-header color-message">
+                            <span class="title big-text">Em quanto tempo é possível perceber resultados?</span>
+                            <b class="expand">^</b>
+                        </button>
+                        <div class="faq-content">
+                            <div class="faq-inner">
                                 <p class="gray small-text">
                                     O prazo varia conforme a complexidade da operação, 
                                     o cenário inicial e a solução contratada. Nosso foco 
                                     não está em promessas de resultados imediatos, mas em construir melhorias consistentes, mensuráveis e sustentáveis.
                                 </p>
                             </div>
-                            
                         </div>
                     </div>
+                    
                 </div>
+                
             </section>
-            <section class="column-list align-items-center text-align-center">
+            <section class="column-list align-items-center text-align-center section-generic">
                 <h2 class="title text-align-center">
                     Sua reputação já está sendo construída. <br>
-                    <span class="marked light">Agora é hora de conduzi-la estrategicamente.</span>
+                    <span class="marked ">Agora é hora de conduzi-la estrategicamente.</span>
                 </h2>
                 <p class="small-text gray container-big">
                     Toda evolução começa pela compreensão do cenário atual. 
                     Conte-nos o seu desafio e descubra qual é o próximo movimento 
                     para fortalecer a reputação da sua empresa.
                 </p>
-                <button class="button-simple">
-                    FALE COM UM ESPECIALISTA
+                <button class="button-simple whatsapp">
+                    <div class="row-list color-message align-items-center">
+                        <img class="icon-small" src="imgs/icon_whatsapp.png">
+                        <p class="no-margin">
+                            FALE COM UM ESPECIALISTA
+                        </p>
+                    </div>
                 </button>
-                <div style="height: 50px;">
-
-                </div>
             </section>
         </main>
         <footer>
@@ -917,57 +974,5 @@
             <p class="small-text gray" style="margin-top: 30px;"> © 2024 PHYLAX PRO. Todos os direitos reservados. </p>
         </footer>
     </body>
-    <script>
-        function bg_parallax()
-        {
-            document.querySelector(".hero").style.backgroundPositionY = `${window.scrollY * 0.4}px`;
-			
-			document.querySelectorAll(".section-generic").forEach(function(bg)
-			{
-				const y = bg.getBoundingClientRect().top + window.scrollY
-				bg.style.backgroundPositionY = `${(window.scrollY-y) * 0.4}px`
-			});
-        }
-        bg_parallax()
-        window.addEventListener("scroll", () => 
-            {
-                bg_parallax()
-            }
-        )
-        window.addEventListener("click", (event) =>
-            {
-                const faq_header = event.target.closest(".faq-header");
-                if(!faq_header)
-                {
-                    return;
-                }
-                const faq_container_click = faq_header.parentElement
-                faq_container_click.classList.toggle("open");
-
-                faq_container_click.parentElement.querySelectorAll(".faq").forEach(faq_container =>
-                    {
-                        if(faq_container_click !== faq_container)
-                        {
-                            faq_container.classList.remove("open")
-                        }
-                        const faq_container_header = faq_container.querySelector(".faq-header")
-                        if(faq_container.classList.contains("open"))
-                        {
-                            faq_container_header.querySelector(".expand").innerHTML = "-"
-                        }else
-                        {
-                            faq_container_header.querySelector(".expand").innerHTML = "+"
-                        }
-
-                    }
-                )
-            }
-        )
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("open");
-        }
-
-
-            
-    </script>
+    <script src="script.js"></script>
 </html>
